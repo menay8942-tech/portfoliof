@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>XO Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="phone">
+    <div class="screen active" id="s1">
+      <div class="logo"><span class="x">X</span><span class="o-ring">O</span></div>
+      <p class="hint">اختاري طريقة اللعب</p>
+      <button class="btn-blue" id="btnFriend">مع صديق</button>
+      <button class="btn-blue outline" id="btnAI">ضد الكمبيوتر</button>
+      <div class="dots"><span class="active"></span><span></span><span></span></div>
+    </div>
+
+    <div class="screen" id="s2">
+      <p class="hint">اختاري رمزك</p>
+      <div class="pick">
+        <div class="card active" data-s="X">X</div>
+        <div class="card" data-s="O">O</div>
+      </div>
+      <div class="circle-go" id="go">✓</div>
+      <div class="dots"><span></span><span class="active"></span><span></span></div>
+    </div>
+
+    <div class="screen" id="s3">
+      <div class="top"><span>انتي</span><b id="sc">0 - 0</b><span id="enemy">صديق</span></div>
+      <div class="board">
+        <div class="cell" data-i="0"></div><div class="cell" data-i="1"></div><div class="cell" data-i="2"></div>
+        <div class="cell" data-i="3"></div><div class="cell" data-i="4"></div><div class="cell" data-i="5"></div>
+        <div class="cell" data-i="6"></div><div class="cell" data-i="7"></div><div class="cell" data-i="8"></div>
+      </div>
+      <div class="circle-go mt" id="reset">↺</div>
+      <div class="dots"><span></span><span></span><span class="active"></span></div>
+    </div>
+  </div>
+  <div class="popup" id="pop"><div class="box"><h2 id="wt"></h2><button id="again">العب تاني</button></div></div>
+  <script src="main.js"></script>
+</body>
+</html>
